@@ -22,9 +22,9 @@ PRODUCT_COPY_FILES += \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/busybox:recovery/root/sbin/busybox \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.rk3566A.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk3566A.rc \
+    $(LOCAL_PATH)/init.rk356x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk356x.rc \
     $(LOCAL_PATH)/wake_lock_filter.xml:system/etc/wake_lock_filter.xml \
-    device/rockchip/rk3566A/package_performance.xml:$(TARGET_COPY_OUT_ODM)/etc/package_performance.xml \
+    $(LOCAL_PATH)/package_performance.xml:$(TARGET_COPY_OUT_ODM)/etc/package_performance.xml \
     $(TARGET_DEVICE_DIR)/media_profiles_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml\
 
 PRODUCT_COPY_FILES += \

@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include device/rockchip/rk3566A/BoardConfig.mk
+include device/rockchip/rk3566/BoardConfig.mk
 BUILD_WITH_GO_OPT := false
 
 # AB image definition
@@ -21,5 +21,5 @@ BOARD_USES_AB_IMAGE := false
 
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
-    TARGET_RECOVERY_FSTAB := device/rockchip/rk3566A/rk3566A_r/recovery.fstab_AB
+    TARGET_RECOVERY_FSTAB := device/rockchip/rk3566/rk3566_r/recovery.fstab_AB
 endif

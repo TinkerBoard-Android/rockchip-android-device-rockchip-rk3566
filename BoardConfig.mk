@@ -2,7 +2,7 @@
 # Copyright (c) 2020 Rockchip Electronics Co., Ltd
 #
 
-CURRENT_SDK_VERSION := rk3566A_ANDROID10.0_MID_V1.0
+CURRENT_SDK_VERSION := rk3566x_ANDROID10.0_MID_V1.0
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -20,7 +20,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
 
-PRODUCT_UBOOT_CONFIG ?= rk3566A
+PRODUCT_UBOOT_CONFIG ?= rk356x
 PRODUCT_KERNEL_ARCH ?= arm64
 PRODUCT_KERNEL_DTS ?= rk3568-evb1-ddr4-v10
 PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig android-11.config
@@ -30,7 +30,7 @@ SF_PRIMARY_DISPLAY_ORIENTATION := 0
 
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
 BUILD_EMULATOR := false
-TARGET_BOARD_PLATFORM := rk3566A
+TARGET_BOARD_PLATFORM := rk356x
 TARGET_BOARD_PLATFORM_GPU := mali-G52
 BOARD_USE_DRM := true
 

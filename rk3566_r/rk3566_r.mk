@@ -20,9 +20,9 @@ PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_BOOT_DEVICE := ff390000.dwmmc,ff3b0000.nandc
 
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/rk3566A/rk3566A_r/BoardConfig.mk
+include device/rockchip/rk3566/rk3566_r/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
-$(call inherit-product, device/rockchip/rk3566A/device.mk)
+$(call inherit-product, device/rockchip/rk3566/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
@@ -30,10 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/../overlay
 
 PRODUCT_CHARACTERISTICS := tablet
 
-PRODUCT_NAME := rk3566A_r
-PRODUCT_DEVICE := rk3566A_r
+PRODUCT_NAME := rk3566_r
+PRODUCT_DEVICE := rk3566_r
 PRODUCT_BRAND := rockchip
-PRODUCT_MODEL := rk3566A_r
+PRODUCT_MODEL := rk3566_r
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 #

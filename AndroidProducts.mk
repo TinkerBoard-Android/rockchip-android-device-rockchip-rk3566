@@ -15,12 +15,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-        $(LOCAL_DIR)/rk3566A_rgo/rk3566A_rgo.mk \
-        $(LOCAL_DIR)/rk3566A_r/rk3566A_r.mk \
+        $(LOCAL_DIR)/rk3566_rgo/rk3566_rgo.mk \
+        $(LOCAL_DIR)/rk3566_r/rk3566_r.mk \
 
 COMMON_LUNCH_CHOICES := \
-    rk3566A_rgo-userdebug \
-    rk3566A_rgo-user \
-    rk3566A_r-userdebug \
-    rk3566A_r-user \
+    rk3566_rgo-userdebug \
+    rk3566_rgo-user \
+    rk3566_r-userdebug \
+    rk3566_r-user \
 

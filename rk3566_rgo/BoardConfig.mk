@@ -13,5 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include device/rockchip/rk3566A/BoardConfig.mk
+include device/rockchip/rk3566/BoardConfig.mk
 BUILD_WITH_GO_OPT := true
