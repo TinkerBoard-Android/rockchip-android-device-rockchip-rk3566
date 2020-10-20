@@ -17,22 +17,26 @@
 # First lunching is R, api_level is 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
-PRODUCT_SDMMC_DEVICE := fe2c0000.dwmmc
+PRODUCT_SDMMC_DEVICE := fe2b0000.dwmmc
 
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/rk356x/rk3566_rgo/BoardConfig.mk
+include device/rockchip/rk356x/rk3568_r/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
+$(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/../overlay
 
 PRODUCT_CHARACTERISTICS := tablet
 
-PRODUCT_NAME := rk3566_rgo
-PRODUCT_DEVICE := rk3566_rgo
+PRODUCT_NAME := rk3568_r
+PRODUCT_DEVICE := rk3568_r
 PRODUCT_BRAND := rockchip
-PRODUCT_MODEL := rk3566_rgo
+PRODUCT_MODEL := rk3568_r
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
-
+#
 ## add Rockchip properties
+#
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160

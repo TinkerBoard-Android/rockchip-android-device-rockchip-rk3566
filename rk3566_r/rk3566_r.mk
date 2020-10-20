@@ -17,12 +17,12 @@
 # First lunching is R, api_level is 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
-PRODUCT_BOOT_DEVICE := ff390000.dwmmc,ff3b0000.nandc
+PRODUCT_SDMMC_DEVICE := fe2c0000.dwmmc
 
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/rk3566/rk3566_r/BoardConfig.mk
+include device/rockchip/rk356x/rk3566_r/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
-$(call inherit-product, device/rockchip/rk3566/device.mk)
+$(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 

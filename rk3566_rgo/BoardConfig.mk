@@ -15,3 +15,4 @@
 #
 include device/rockchip/rk3566/BoardConfig.mk
 BUILD_WITH_GO_OPT := true
+PRODUCT_KERNEL_DTS := rk3566-rk817-tablet
