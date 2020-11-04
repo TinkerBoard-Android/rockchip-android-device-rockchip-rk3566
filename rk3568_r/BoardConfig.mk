@@ -24,4 +24,5 @@ ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_r/recovery.fstab_AB
 endif
 
+PRODUCT_UBOOT_CONFIG := rk3568
 PRODUCT_KERNEL_DTS := rk3568-evb1-ddr4-v10
