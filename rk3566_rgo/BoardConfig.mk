@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include device/rockchip/rk3566/BoardConfig.mk
+include device/rockchip/rk356x/BoardConfig.mk
 BUILD_WITH_GO_OPT := true
 PRODUCT_UBOOT_CONFIG := rk3566
 PRODUCT_KERNEL_DTS := rk3566-rk817-tablet
