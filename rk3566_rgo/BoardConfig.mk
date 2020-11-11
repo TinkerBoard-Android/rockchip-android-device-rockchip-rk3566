@@ -15,5 +15,5 @@
 #
 include device/rockchip/rk356x/BoardConfig.mk
 BUILD_WITH_GO_OPT := true
-PRODUCT_UBOOT_CONFIG := rk3566
+PRODUCT_UBOOT_CONFIG := rk3568
 PRODUCT_KERNEL_DTS := rk3566-rk817-tablet
