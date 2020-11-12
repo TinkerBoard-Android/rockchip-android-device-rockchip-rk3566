@@ -96,3 +96,9 @@ BUILD_WITH_GO_OPT := true
 #Config omx to support codec type.
 BOARD_SUPPORT_VP9 := false
 BOARD_SUPPORT_VP6 := false
+
+# Allow deprecated BUILD_ module types to get DDK building
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
+BUILD_BROKEN_USES_BUILD_HOST_SHARED_LIBRARY := true
+BUILD_BROKEN_USES_BUILD_HOST_STATIC_LIBRARY := true
