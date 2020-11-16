@@ -12,6 +12,8 @@ PRODUCT_PACKAGES += \
     rockchip.hardware.neuralnetworks@1.0-impl \
     rockchip.hardware.neuralnetworks@1.0-service
 
+$(call inherit-product-if-exists, vendor/rockchip/common/npu/npu.mk)
+
 # enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
