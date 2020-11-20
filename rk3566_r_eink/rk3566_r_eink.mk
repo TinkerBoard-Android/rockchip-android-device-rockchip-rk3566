@@ -39,4 +39,5 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 #
 ## add Rockchip properties
 #
-PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
+PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320 \
+                              sys.eink.mode=7
