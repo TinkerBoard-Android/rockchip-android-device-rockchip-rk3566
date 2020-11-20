@@ -13,20 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include device/rockchip/rk356x/BoardConfig.mk
+BUILD_WITH_GO_OPT := false
 
-PRODUCT_MAKEFILES := \
-        $(LOCAL_DIR)/rk3566_rgo/rk3566_rgo.mk \
-        $(LOCAL_DIR)/rk3566_r/rk3566_r.mk \
-        $(LOCAL_DIR)/rk3568_r/rk3568_r.mk \
-        $(LOCAL_DIR)/rk3566_r_eink/rk3566_r_eink.mk \ 
-COMMON_LUNCH_CHOICES := \
-    rk3566_rgo-userdebug \
-    rk3566_rgo-user \
-    rk3566_r-userdebug \
-    rk3566_r-user \
-    rk3568_r-userdebug \
-    rk3568_r-user \
-    rk3566_r_eink-userdebug \
-    rk3566_r_eink-user \
+# AB image definition
+BOARD_USES_AB_IMAGE := false
 
-
+ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+    include device/rockchip/common/BoardConfig_AB.mk
+    TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_r/recovery.fstab_AB
+endif
+PRODUCT_UBOOT_CONFIG := rk3568
+PRODUCT_KERNEL_DTS := rk3566-evb2-lp4x-v10-eink
+BOARD_GSENSOR_MXC6655XA_SUPPORT := true
+BOARD_CAMERA_SUPPORT_EXT := true
+#Config RK EBOOK
+BUILD_WITH_RK_EBOOK := true
