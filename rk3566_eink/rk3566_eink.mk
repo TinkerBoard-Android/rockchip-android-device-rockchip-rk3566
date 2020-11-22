@@ -20,7 +20,7 @@ PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_SDMMC_DEVICE := fe2b0000.dwmmc
 
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/rk356x/rk3566_r_eink/BoardConfig.mk
+include device/rockchip/rk356x/rk3566_eink/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
@@ -30,10 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_CHARACTERISTICS := tablet
 
-PRODUCT_NAME := rk3566_r_eink
-PRODUCT_DEVICE := rk3566_r_eink
+PRODUCT_NAME := rk3566_eink
+PRODUCT_DEVICE := rk3566_eink
 PRODUCT_BRAND := rockchip
-PRODUCT_MODEL := rk3566_r_eink
+PRODUCT_MODEL := rk3566_eink
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 #
