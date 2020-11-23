@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/spn-conf.xml:system/etc/s
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.ota.host = www.rockchip.com:2300 \
     ro.vendor.sdkversion = $(CURRENT_SDK_VERSION) \
-    vendor.gralloc.disable_afbc = 1
+    vendor.gralloc.disable_afbc = 0
 
 #
 # add Rockchip properties here
