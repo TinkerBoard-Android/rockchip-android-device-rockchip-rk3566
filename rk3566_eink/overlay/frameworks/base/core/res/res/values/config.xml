@@ -163,5 +163,12 @@
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">0</integer>
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
+    <integer name="config_shortAnimTime">0</integer>
+    <integer name="config_mediumAnimTime">0</integer>
+    <integer name="config_longAnimTime">0</integer>
+    <integer name="config_activityShortDur">0</integer>
+    <integer name="config_activityDefaultDur">0</integer>
+    <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.0</item>
+    <bool name="config_disableLockscreenByDefault">true</bool>
 </resources>
 
