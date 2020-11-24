@@ -36,6 +36,11 @@ PRODUCT_BRAND := rockchip
 PRODUCT_MODEL := rk3566_eink
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/poweroff.bmp:$(TARGET_COPY_OUT_VENDOR)/media/poweroff.bmp \
+    $(LOCAL_PATH)/standby.bmp:$(TARGET_COPY_OUT_VENDOR)/media/standby.bmp \
+    $(LOCAL_PATH)/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip
 #
 ## add Rockchip properties
 #
