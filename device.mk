@@ -47,6 +47,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sdkversion = $(CURRENT_SDK_VERSION) \
     vendor.gralloc.disable_afbc = 1
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/public.libraries.txt:vendor/etc/public.libraries.txt
+
 #
 # add Rockchip properties here
 #
