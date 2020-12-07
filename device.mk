@@ -7,7 +7,6 @@ PRODUCT_PACKAGES += \
 
 BOARD_SEPOLICY_DIRS += vendor/rockchip/hardware/interfaces/neuralnetworks/1.0/default/sepolicy
 PRODUCT_PACKAGES += \
-    RKNNSSDApp \
     librknnhal_bridge \
     rockchip.hardware.neuralnetworks@1.0-impl \
     rockchip.hardware.neuralnetworks@1.0-service
