@@ -1,0 +1,6 @@
+service standby /system/bin/standby
+    user root
+    group root system
+    seclabel u:r:ueventd:s0
+    disabled
+    oneshot
