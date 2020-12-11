@@ -1,0 +1,49 @@
+cc_binary {
+    name: "standby",
+    defaults: ["skia_deps",
+               "skia_tool_deps",
+               "skia_pgo_no_profile_use",
+    ],
+    srcs: [
+        "standby.cpp",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "libbinder",
+        "libui",
+        "libgui",
+        "liblog",
+    ],
+    whole_static_libs: [
+        "libskia",
+    ],
+
+    include_dirs: [
+    "external/skia/include/core",
+    "external/skia/include/codec",
+    "external/skia/include/encode",
+    "external/skia/include/third_party",
+    "external/skia/src/codec",
+    "external/skia/src/core",
+    "external/skia/tools",
+    "external/skia/include/utils",
+    "external/skia/",
+    "frameworks/base/core/jni/include",
+    ],
+
+    cflags: [
+        "-O2",
+        "-g",
+        "-W",
+        "-Wall",
+        "-Wno-unused-parameter",
+        "-Wno-unused-variable",
+        "-Wno-constant-conversion",
+        "-Wno-sign-compare",
+    ],
+
+    compile_multilib: "32",
+    init_rc: ["standby.rc"],
+}

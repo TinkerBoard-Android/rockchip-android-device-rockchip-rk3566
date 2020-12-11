@@ -40,7 +40,12 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/poweroff.bmp:$(TARGET_COPY_OUT_VENDOR)/media/poweroff.bmp \
     $(LOCAL_PATH)/standby.bmp:$(TARGET_COPY_OUT_VENDOR)/media/standby.bmp \
-    $(LOCAL_PATH)/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip
+    $(LOCAL_PATH)/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip \
+    $(LOCAL_PATH)/android.software.eink.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.eink.xml
+
+
+PRODUCT_PACKAGES += \
+    standby
 #
 ## add Rockchip properties
 #
