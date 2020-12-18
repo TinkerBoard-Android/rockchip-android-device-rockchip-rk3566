@@ -26,7 +26,7 @@ $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := device/rockchip/common/overlay $(LOCAL_PATH)/overlay
 
 PRODUCT_CHARACTERISTICS := tablet
 
@@ -45,7 +45,9 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
-    standby
+    standby \
+    NoNavigationBarModeGestural
+
 #
 ## add Rockchip properties
 #

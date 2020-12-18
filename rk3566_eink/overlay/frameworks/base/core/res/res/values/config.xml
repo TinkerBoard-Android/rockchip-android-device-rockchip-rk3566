@@ -162,7 +162,11 @@
          1: 2 button mode (back, home buttons + swipe up for overview)
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">0</integer>
-    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+    <bool name="config_swipe_up_gesture_setting_available">false</bool>
+    <bool name="config_use16BitTaskSnapshotPixelFormat">true</bool>
+    <!-- Launcher Go customization requires AppWidgetService, but otherwise
+         home screen widgets are not supported -->
+    <bool name="config_enableAppWidgetService">true</bool>
     <integer name="config_shortAnimTime">0</integer>
     <integer name="config_mediumAnimTime">0</integer>
     <integer name="config_longAnimTime">0</integer>
