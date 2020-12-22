@@ -18,6 +18,7 @@
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_SDMMC_DEVICE := fe2b0000.dwmmc
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig rk356x_evb.config
 
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
 include device/rockchip/rk356x/rk3566_r/BoardConfig.mk
@@ -40,3 +41,4 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 ## add Rockchip properties
 #
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
+PRODUCT_PROPERTY_OVERRIDES += ro.wifi.sleep.power.down=true
