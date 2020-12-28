@@ -14,7 +14,9 @@
 # limitations under the License.
 #
 include device/rockchip/rk356x/BoardConfig.mk
-BUILD_WITH_GO_OPT := false
+BUILD_WITH_GO_OPT := true
+
+DONT_UNCOMPRESS_PRIV_APPS_DEXS := false
 
 # AB image definition
 BOARD_USES_AB_IMAGE := false
@@ -26,8 +28,22 @@ ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
 endif
 PRODUCT_UBOOT_CONFIG := rk3566
 PRODUCT_KERNEL_DTS := rk3566-evb2-lp4x-v10-eink
+PRODUCT_FSTAB_TEMPLATE := device/rockchip/rk356x/rk3566_eink/fstab_eink.in
+
 BOARD_GSENSOR_MXC6655XA_SUPPORT := true
 BOARD_CAMERA_SUPPORT_EXT := true
+
 #Config RK EBOOK
 BUILD_WITH_RK_EBOOK := true
 SF_PRIMARY_DISPLAY_ORIENTATION := 270
+
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+
+TARGET_2ND_ARCH :=
+TARGET_2ND_ARCH_VARIANT :=
+TARGET_2ND_CPU_ABI :=
+TARGET_2ND_CPU_ABI2 :=
+TARGET_2ND_CPU_VARIANT :=
