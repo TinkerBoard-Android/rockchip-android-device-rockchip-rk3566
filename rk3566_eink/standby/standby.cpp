@@ -147,7 +147,7 @@ int main(int argc, char * *argv)
     if((access(data_src_path,F_OK))!=-1)
     {
         src_path = data_src_path;
-    }else if((access("test.c",F_OK))!=-1)
+    }else if((access(vendor_src_path,F_OK))!=-1)
     {
         src_path = vendor_src_path;
     }else{
