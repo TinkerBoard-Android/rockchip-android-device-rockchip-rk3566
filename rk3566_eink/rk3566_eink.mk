@@ -38,11 +38,13 @@ PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/poweroff.bmp:$(TARGET_COPY_OUT_VENDOR)/media/poweroff.bmp \
-    $(LOCAL_PATH)/standby.png:$(TARGET_COPY_OUT_VENDOR)/media/standby.png \
-    $(LOCAL_PATH)/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip \
+    $(LOCAL_PATH)/eink_logo/poweroff_logo/poweroff.png:$(TARGET_COPY_OUT_VENDOR)/media/poweroff.png \
+    $(LOCAL_PATH)/eink_logo/poweroff_logo/poweroff_nopower.png:$(TARGET_COPY_OUT_VENDOR)/media/poweroff_nopower.png \
+    $(LOCAL_PATH)/eink_logo/standby_logo/standby.png:$(TARGET_COPY_OUT_VENDOR)/media/standby.png \
+    $(LOCAL_PATH)/eink_logo/standby_logo/standby_lowpower.png:$(TARGET_COPY_OUT_VENDOR)/media/standby_lowpower.png \
+    $(LOCAL_PATH)/eink_logo/standby_logo/standby_charge.png:$(TARGET_COPY_OUT_VENDOR)/media/standby_charge.png \
+    $(LOCAL_PATH)/eink_logo/android_logo/bootanimation.zip:$(TARGET_COPY_OUT_ODM)/media/bootanimation.zip \
     $(LOCAL_PATH)/android.software.eink.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.eink.xml
-
 
 PRODUCT_PACKAGES += \
     standby \
