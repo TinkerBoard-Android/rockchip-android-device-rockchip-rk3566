@@ -25,6 +25,8 @@ include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_NAME := rk3566_rgo
@@ -36,3 +38,5 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 ## add Rockchip properties
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240
+PRODUCT_PROPERTY_OVERRIDES += ro.wifi.sleep.power.down=true
+PRODUCT_PROPERTY_OVERRIDES += persist.wifi.sleep.delay.ms=0
