@@ -56,4 +56,5 @@ PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320 \
                               sys.eink.mode=7 \
                               sys.eink.rgba2y4_by_rga=1 \
                               persist.sys.idle-wakeup=false \
-                              persist.sys.idle-delay=5000
+                              persist.sys.idle-delay=5000 \
+                              sys.eink.recovery.eink_fb = true
