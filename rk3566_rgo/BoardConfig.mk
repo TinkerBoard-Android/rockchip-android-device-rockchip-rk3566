@@ -22,3 +22,11 @@ BOARD_SENSOR_COMPASS_AK8963-64 := true
 BOARD_GYROSCOPE_SENSOR_SUPPORT := true
 BOARD_PROXIMITY_SENSOR_SUPPORT := true
 BOARD_LIGHT_SENSOR_SUPPORT := true
+
+BOARD_USES_AB_IMAGE := false
+BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
+
+ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+  include device/rockchip/common/BoardConfig_AB.mk
+  TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_rgo/recovery.fstab_AB
+endif
