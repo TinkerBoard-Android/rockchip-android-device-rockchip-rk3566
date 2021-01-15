@@ -47,7 +47,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/android.software.eink.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.eink.xml
 
 PRODUCT_PACKAGES += \
-    NoNavigationBarModeGestural
+    NoNavigationBarModeGestural \
+    NoteDemo
 
 #
 ## add Rockchip properties
