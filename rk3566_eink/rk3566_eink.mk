@@ -22,6 +22,10 @@ PRODUCT_SDMMC_DEVICE := fe2b0000.dwmmc
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
 include device/rockchip/rk356x/rk3566_eink/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.rk356x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk356x.rc
+
 $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
