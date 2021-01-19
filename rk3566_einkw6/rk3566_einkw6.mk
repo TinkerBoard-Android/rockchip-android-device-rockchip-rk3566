@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
 #
 ## add Rockchip properties
 #
-PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240 \
+PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=210 \
                               ro.vendor.eink=true \
                               sys.eink.mode=7 \
                               sys.eink.rgba2y4_by_rga=1 \
