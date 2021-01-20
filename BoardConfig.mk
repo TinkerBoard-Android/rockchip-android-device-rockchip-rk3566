@@ -95,7 +95,7 @@ ALLOW_MISSING_DEPENDENCIES=true
 BUILD_WITH_GO_OPT := true
 
 #Config omx to support codec type.
-BOARD_SUPPORT_VP9 := false
+BOARD_SUPPORT_VP9 := true
 BOARD_SUPPORT_VP6 := false
 
 # Allow deprecated BUILD_ module types to get DDK building
