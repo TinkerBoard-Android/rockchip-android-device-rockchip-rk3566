@@ -26,7 +26,7 @@ ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
     TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_r/recovery.fstab_AB
 endif
-PRODUCT_UBOOT_CONFIG := rk3566
+PRODUCT_UBOOT_CONFIG := rk3566 ../rkbin/RKTRUST/RK3568TRUST_ULTRA.ini
 PRODUCT_KERNEL_DTS := rk3566-rk817-eink-w103
 PRODUCT_FSTAB_TEMPLATE := device/rockchip/rk356x/rk3566_eink/fstab_eink.in
 
