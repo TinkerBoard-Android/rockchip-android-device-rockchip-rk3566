@@ -34,7 +34,7 @@ PRODUCT_DEVICE := rk3566_rgo
 PRODUCT_BRAND := rockchip
 PRODUCT_MODEL := rk3566_rgo
 PRODUCT_MANUFACTURER := rockchip
-PRODUCT_AAPT_PREF_CONFIG := mdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 ## add Rockchip properties
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240
