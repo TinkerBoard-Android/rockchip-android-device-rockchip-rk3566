@@ -24,6 +24,7 @@ include device/rockchip/rk356x/rk3566_eink/BoardConfig.mk
 include device/rockchip/common/BoardConfig.mk
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wake_lock_filter.xml:system/etc/wake_lock_filter.xml \
     $(LOCAL_PATH)/init.rk356x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk356x.rc
 
 $(call inherit-product, device/rockchip/rk356x/device.mk)
