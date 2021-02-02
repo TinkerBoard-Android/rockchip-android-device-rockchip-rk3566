@@ -28,3 +28,6 @@ on init
 
     chown system system /sys/class/devfreq/dmc/system_status
     chmod 0666 /sys/class/devfreq/dmc/system_status
+
+on property:cts_gts.status=true
+    setprop vendor.hwc.compose_policy 2
