@@ -97,6 +97,7 @@ BUILD_WITH_GO_OPT := true
 #Config omx to support codec type.
 BOARD_SUPPORT_VP9 := true
 BOARD_SUPPORT_VP6 := false
+BOARD_SUPPORT_HEVC_ENC := true
 
 # Allow deprecated BUILD_ module types to get DDK building
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
