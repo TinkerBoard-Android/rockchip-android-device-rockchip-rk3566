@@ -18,7 +18,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, vendor/rockchip/common/npu/npu.mk)
 
 BOARD_SEPOLICY_DIRS += device/rockchip/rk356x/sepolicy_vendor
-
+TARGET_SYSTEM_PROP += device/rockchip/rk356x/rk356x.prop
 # enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
@@ -75,7 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.audio.monitorOrientation=true \
                 debug.nfc.fw_download=false \
                 debug.nfc.se=false \
-                vendor.hwc.compose_policy=6 \
+                vendor.hwc.compose_policy=1 \
                 sys.wallpaper.rgb565=0 \
                 sf.power.control=2073600 \
                 sys.rkadb.root=0 \

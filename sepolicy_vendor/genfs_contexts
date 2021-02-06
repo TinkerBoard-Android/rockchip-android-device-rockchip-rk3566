@@ -23,3 +23,4 @@ genfscon sysfs /devices/platform/rk-headset/extcon                              
 
 genfscon sysfs /devices/platform/fe2c0000.dwmmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:1/net                 u:object_r:sysfs_net:s0
 genfscon sysfs /devices/platform/fe2c0000.dwmmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:2/net                 u:object_r:sysfs_net:s0
+genfscon sysfs /devices/platform/fe310000.sdhci/mmc_host/mmc2/mmc2:0001/block/mmcblk2                   u:object_r:sysfs_mmc:s0
