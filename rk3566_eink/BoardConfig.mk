@@ -21,6 +21,7 @@ DONT_UNCOMPRESS_PRIV_APPS_DEXS := false
 # AB image definition
 BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
+BOARD_SELINUX_ENFORCING := true
 
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
