@@ -1,0 +1,1 @@
+type sysfs_vendor_sleep, sysfs_type, fs_type, mlstrustedobject;

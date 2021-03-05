@@ -31,7 +31,9 @@ $(call inherit-product, device/rockchip/rk356x/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/rockchip/rk356x/sepolicy_ebook_system
 BOARD_SEPOLICY_DIRS += device/rockchip/rk356x/sepolicy_ebook
+
 DEVICE_PACKAGE_OVERLAYS := device/rockchip/common/overlay $(LOCAL_PATH)/overlay
 
 PRODUCT_CHARACTERISTICS := tablet
