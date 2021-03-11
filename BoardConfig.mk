@@ -111,3 +111,6 @@ BOARD_SHOW_HDMI_SETTING ?= true
 BOARD_HS_DYNAMIC_AFBC_TARGET := false
 
 PRODUCT_HAVE_OPTEE := true
+
+#trust is merging into uboot
+BOARD_ROCKCHIP_TRUST_MERGE_TO_UBOOT := true
