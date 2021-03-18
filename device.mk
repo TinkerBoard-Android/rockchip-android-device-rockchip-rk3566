@@ -5,6 +5,9 @@ PRODUCT_PACKAGES += \
     displayd \
     libion
 
+PRODUCT_PACKAGES += \
+    RockchipPinnerServiceArm64
+
 # Disable partial updates
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_partial_updates=false
