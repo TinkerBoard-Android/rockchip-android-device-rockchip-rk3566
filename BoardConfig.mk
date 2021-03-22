@@ -114,3 +114,5 @@ PRODUCT_HAVE_OPTEE := true
 
 #trust is merging into uboot
 BOARD_ROCKCHIP_TRUST_MERGE_TO_UBOOT := true
+
+BOARD_BASEPARAMETER_SUPPORT := true
