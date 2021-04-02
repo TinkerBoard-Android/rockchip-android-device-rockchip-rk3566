@@ -6,7 +6,7 @@ PRODUCT_PACKAGES += \
     libion
 
 PRODUCT_PACKAGES += \
-    RockchipPinnerServiceArm64
+    RockchipPinnerService
 
 # Disable partial updates
 PRODUCT_PROPERTY_OVERRIDES += \
