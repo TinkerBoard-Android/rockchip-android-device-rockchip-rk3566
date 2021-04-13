@@ -22,6 +22,7 @@ DONT_UNCOMPRESS_PRIV_APPS_DEXS := false
 BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 BOARD_SELINUX_ENFORCING := true
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/rockchip/rk356x/sepolicy_ebook_public
 
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
