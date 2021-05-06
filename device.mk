@@ -15,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 BOARD_SEPOLICY_DIRS += vendor/rockchip/hardware/interfaces/neuralnetworks/1.0/default/sepolicy
 PRODUCT_PACKAGES += \
     public.libraries-rockchip \
-    librknn_api \
+    librknn_api_android \
     librknnhal_bridge.rockchip \
     rockchip.hardware.neuralnetworks@1.0-impl \
     rockchip.hardware.neuralnetworks@1.0-service
