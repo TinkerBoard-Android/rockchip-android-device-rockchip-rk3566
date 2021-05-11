@@ -45,7 +45,7 @@ PRODUCT_MODEL := rk3566_eink
 PRODUCT_MANUFACTURER := rockchip
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
-PRODUCT_KERNEL_CONFIG := rockchip_defconfig android-11-go.config rk356x_eink.config
+PRODUCT_KERNEL_CONFIG += rk356x_eink.config
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/eink_logo/poweroff_logo/poweroff.png:$(TARGET_COPY_OUT_VENDOR)/media/poweroff.png \
