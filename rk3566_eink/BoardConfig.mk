@@ -26,7 +26,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/rockchip/rk356x/sepolicy_ebook_public
 
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
-    TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_r/recovery.fstab_AB
+    TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_eink/recovery.fstab_AB
 endif
 PRODUCT_UBOOT_CONFIG := rk3566-eink
 PRODUCT_KERNEL_DTS := rk3566-rk817-eink-w103
