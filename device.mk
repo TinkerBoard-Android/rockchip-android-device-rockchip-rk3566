@@ -22,6 +22,7 @@ BOARD_SEPOLICY_DIRS += vendor/rockchip/hardware/interfaces/neuralnetworks/1.0/de
 PRODUCT_PACKAGES += \
     public.libraries-rockchip \
     librknn_api_android \
+    rknn_server \
     librknnhal_bridge.rockchip \
     rockchip.hardware.neuralnetworks@1.0-impl \
     rockchip.hardware.neuralnetworks@1.0-service
