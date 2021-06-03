@@ -60,6 +60,8 @@ PRODUCT_PACKAGES += \
     NoNavigationBarModeGestural \
     NoteDemo
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += ro.lockscreen.disable.default=true
+
 #
 ## add Rockchip properties
 #
