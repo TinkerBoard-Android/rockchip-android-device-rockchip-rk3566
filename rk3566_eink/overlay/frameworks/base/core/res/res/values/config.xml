@@ -162,7 +162,6 @@
     <integer name="config_activityShortDur">0</integer>
     <integer name="config_activityDefaultDur">0</integer>
     <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.0</item>
-    <bool name="config_disableLockscreenByDefault">true</bool>
     <bool name="config_enableLockScreenRotation">false</bool>
 </resources>
 
