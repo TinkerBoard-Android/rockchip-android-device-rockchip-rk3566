@@ -17,9 +17,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
-TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
-BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
-
 PRODUCT_UBOOT_CONFIG ?= rk3568
 PRODUCT_KERNEL_ARCH ?= arm64
 PRODUCT_KERNEL_DTS ?= rk3568-evb1-ddr4-v10
