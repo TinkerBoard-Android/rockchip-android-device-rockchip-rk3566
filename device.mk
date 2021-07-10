@@ -95,3 +95,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.build.shutdown_timeout=6 \
                 persist.enable_task_snapshots=false \
                 ro.vendor.frameratelock=true
+
+#
+#add for camera aiq2.0
+#
+PRODUCT_PACKAGES += \
+	rkaiq_tool_server \
+	rkaiq_3A_server
+PRODUCT_COPY_FILES += \
+	external/camera_engine_rkaiq/rkisp2x_tuner/reset_camera.sh:$(TARGET_COPY_OUT_VENDOR)/etc/camera/reset_camera.sh
