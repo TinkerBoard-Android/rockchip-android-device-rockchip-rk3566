@@ -16,6 +16,12 @@
 include device/rockchip/rk356x/BoardConfig.mk
 BUILD_WITH_GO_OPT := false
 
+PRODUCT_UBOOT_CONFIG := rk3566
+PRODUCT_KERNEL_DTS := rk3566-rk817-tablet
+BOARD_GSENSOR_MXC6655XA_SUPPORT := true
+BOARD_CAMERA_SUPPORT_EXT := true
+BOARD_HS_ETHERNET := true
+
 # AB image definition
 BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
@@ -23,17 +29,4 @@ BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
     TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_s/recovery.fstab_AB
-endif
-PRODUCT_UBOOT_CONFIG := rk3566
-PRODUCT_KERNEL_DTS := rk3566-rk817-tablet
-BOARD_GSENSOR_MXC6655XA_SUPPORT := true
-BOARD_CAMERA_SUPPORT_EXT := true
-BOARD_HS_ETHERNET := true
-
-BOARD_USES_AB_IMAGE := false
-BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
-
-ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
-  include device/rockchip/common/BoardConfig_AB.mk
-  TARGET_RECOVERY_FSTAB := device/rockchip/rk356x/rk3566_s/recovery.fstab_AB
 endif
