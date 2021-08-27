@@ -23,6 +23,9 @@ PRODUCT_KERNEL_DTS ?= rk3568-evb1-ddr4-v10
 PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig
 
 # BOARD_AVB_ENABLE := true
+# used for fstab_generator, sdmmc controller address
+PRODUCT_BOOT_DEVICE := fe310000.sdhci,fe330000.nandc
+
 SF_PRIMARY_DISPLAY_ORIENTATION := 0
 
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
