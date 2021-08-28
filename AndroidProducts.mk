@@ -19,7 +19,7 @@ PRODUCT_MAKEFILES := \
         $(LOCAL_DIR)/rk3566_32bit/rk3566_32bit.mk \
         $(LOCAL_DIR)/rk3566_r/rk3566_r.mk \
         $(LOCAL_DIR)/rk3566_s/rk3566_s.mk \
-        $(LOCAL_DIR)/rk3568_r/rk3568_r.mk \
+        $(LOCAL_DIR)/rk3568_s/rk3568_s.mk \
         $(LOCAL_DIR)/rk3566_eink/rk3566_eink.mk \
         $(LOCAL_DIR)/rk3566_einkw6/rk3566_einkw6.mk
 
@@ -32,8 +32,8 @@ COMMON_LUNCH_CHOICES := \
     rk3566_r-user \
     rk3566_s-userdebug \
     rk3566_s-user \
-    rk3568_r-userdebug \
-    rk3568_r-user \
+    rk3568_s-userdebug \
+    rk3568_s-user \
     rk3566_eink-userdebug \
     rk3566_eink-user \
     rk3566_einkw6-userdebug \
