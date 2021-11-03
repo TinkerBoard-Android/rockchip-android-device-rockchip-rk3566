@@ -4,6 +4,8 @@
 
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=RK3566
+# GPU Profiling
+PRODUCT_VENDOR_PROPERTIES += graphics.gpu.profiler.support=true
 
 PRODUCT_PACKAGES += \
     displayd \
