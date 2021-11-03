@@ -1,6 +1,10 @@
 #
 # Copyright (c) 2020 Rockchip Electronics Co., Ltd
 #
+
+# Set system properties identifying the chipset
+PRODUCT_VENDOR_PROPERTIES += ro.soc.model=RK3566
+
 PRODUCT_PACKAGES += \
     displayd \
     libion
